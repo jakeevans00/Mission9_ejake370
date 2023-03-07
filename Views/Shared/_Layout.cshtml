@@ -7,9 +7,18 @@
     <link href="/lib/css/bootstrap.min.css" rel="stylesheet" />
 </head>
 <body>
+    <nav class="navbar-brand ml-2">
+        <a class="navbar-brand col-4 mb-1">Online Bookstore</a>
+        <form class="form-inline">
+            <input type="hidden" class="col-5" />
+            <input class="form-control mr-sm-2" type="search" placeholder="Find something to read" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+    </nav>
     <div class="bg-dark text-white p-2">
-        <span class="navbar-brand ml-2">Online Bookstore</span><br />
+
     </div>
+
     <div class="row m-1 p-1">
         <div id="categories" class="col-3">
             <vc:categories></vc:categories>
