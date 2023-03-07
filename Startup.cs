@@ -49,6 +49,13 @@ namespace Mission9_ejake370
 
             app.UseEndpoints(endpoints =>
             {
+                endpoints.MapControllerRoute(
+                    "categoriespage","{bookCategory}/Page{pageNum}",
+                    new { Controller = "Home", action = "Index"}
+                    );
+                endpoints.MapControllerRoute("Paging", "Page{pageNum}", new { Controller = "Home", action = "Index", pageNum = 1 });
+
+                endpoints.MapControllerRoute("category", "{bookCategory}", new { Controller = "Home", action = "Index", pageNum = 1 });
                 endpoints.MapDefaultControllerRoute();
             });
         }
