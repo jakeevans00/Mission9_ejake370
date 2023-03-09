@@ -20,6 +20,7 @@ namespace Mission9_ejake370.Models
         }
 
         public DbSet<Book> Books { get; set; }
+        public DbSet<Checkout> Checkouts { get; set; }
 
        
     }
